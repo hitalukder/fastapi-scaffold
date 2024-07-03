@@ -1,0 +1,2 @@
+fastapi
+ibm_watsonx_ai
