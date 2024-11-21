@@ -1,3 +1,7 @@
+# Fastapi RAG pipeline scaffold
+
+This is a FastAPI RAG pipeline scaffold designed to allow you to focus on building the application rather than worrying about the underlying structure. It provides a best-practice framework and guidelines.
+
 ## Create environment
 
 ```sh
@@ -19,4 +23,3 @@ pip3 install -r requirements.txt
 ```
 python3 main.py
 ```
-# superknowa-backend
