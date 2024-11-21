@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from ibm_watsonx_ai.foundation_models import Model
+from ibm_watsonx_ai.foundation_models import ModelInference
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
 from ibm_watsonx_ai import Credentials
 import os
@@ -77,7 +77,7 @@ class WatsonXAI:
                   max_new_tokens: int = 2000, 
                   min_new_tokens: int = 30, 
                   temperature: float = 1.0, 
-                  repetition_penalty: float = 1.0) -> Model:
+                  repetition_penalty: float = 1.0) -> ModelInference:
         """
         Returns a WatsonX AI Model object configured with the specified parameters.
         """
@@ -91,7 +91,7 @@ class WatsonXAI:
 
         logging.debug(f"Model parameters: {model_params}")
 
-        return Model(
+        return ModelInference(
             model_id=self.model_name,
             params=model_params,
             credentials=self.credentials,

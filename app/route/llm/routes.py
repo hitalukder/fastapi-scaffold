@@ -12,7 +12,7 @@ from app.src.model.LLMInput import LLMInput
 from app.src.model.LLMOutput import LLMOutput
 from app.src.services.PromptService import build_prompt
 from app.src.services.WXService import WatsonXAI
-from ibm_watsonx_ai.foundation_models import Model
+from ibm_watsonx_ai.foundation_models import ModelInference
 
 # Configure logging
 logging.basicConfig(
@@ -124,7 +124,7 @@ async def stream_response(
         )
 
 
-async def event_stream(watsonx_model: Model, llm_input: str):
+async def event_stream(watsonx_model: ModelInference, llm_input: str):
     """
     Generator function for event streaming.
     """
