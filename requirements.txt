@@ -1,2 +1,4 @@
 fastapi
+uvicorn
 ibm_watsonx_ai
+python-dotenv
