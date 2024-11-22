@@ -20,6 +20,14 @@ source backend/bin/activate
 pip3 install -r requirements.txt
 ```
 
+## environment variables
+
+Fillup the variables value and copy the env to a .env file before running the server.
+
+```sh
+cp env .env
+```
+
 ## Run the server
 
 ```
