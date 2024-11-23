@@ -5,8 +5,8 @@ FROM registry.access.redhat.com/ubi8/python-311:latest
 WORKDIR /app/backend
 
 # Copy the requirements file to the container and install dependencies
-COPY requirement.txt requirement.txt
-RUN pip3 install -r requirement.txt
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Copy your FastAPI Python script to the container
 COPY main.py main.py
